@@ -1,0 +1,118 @@
+$primary: #10557e;
+$link: orange;
+$navbarHeight: 8rem;
+// $info: $cyan
+// $success: $green
+// $warning: $yellow
+// $danger: $red
+// $dark: $grey-darker
+// $text: $grey-dark 
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/grid/_all.sass";
+@import "bulma/sass/base/_all.sass";
+@import "bulma/sass/components/_all.sass";
+@import "bulma/sass/elements/_all.sass";
+@import "bulma/sass/form/_all.sass";
+@import "bulma/sass/helpers/_all.sass";
+@import "bulma/sass/layout/_all.sass";
+
+#reverse {
+  rotate: 180deg;
+}
+.top-hero {
+  margin-top: $navbarHeight;
+}
+.hero-body {
+    background: $primary;
+}
+.hero-head {
+  position: fixed;
+  // position: sticky;
+  // margin-top: .5rem;
+  width: 100%;
+  background: white;
+  top: 0;
+  left: 0;
+  // border: 1px solid red;
+  z-index: 999;
+}
+.navbar-item img {
+    max-height: $navbarHeight;
+    padding: 0;
+}
+.card-image:first-child img {
+  border-top-left-radius: 2.25rem;
+  border-top-right-radius: 2.25rem;
+  // border-bottom-right-radius: 2.25rem;
+  // border-bottom-right-radius: 2.25rem;
+}
+.card {
+  border-radius: 2.25rem;
+}
+/* @import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/grid/columns.sass"; */
+/* Wave CSS */
+.wave-animation {
+    position: relative;
+    width: 100%;
+    height: 143px;
+    background-color: $primary;
+    background-size: cover;
+    background-attachment: fixed;
+    
+  }
+  .wave-animation .wave {
+    position: absolute;
+    width: 100%;
+    height: 143px;/*PNG*/
+    top:0;
+    left:0;
+    background-image: url('https://vitalflow.com.ar/img/anim-onda.png');
+    animation: anim 10s linear infinite;
+    
+  }
+  .wave-animation .wave:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    top:0;
+    left:0;
+    background-image: url('https://vitalflow.com.ar/img/anim-onda.png');
+    opacity: 0.4;
+    animation: anim-rev 10s linear infinite;
+    
+  }
+  .wave-animation .wave:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    top:0;
+    left:0;
+    background-image: url('https://vitalflow.com.ar/img/anim-onda.png');
+    opacity: 0.6;
+    animation-delay: -5s;
+    animation: anim 20s linear infinite;
+    
+  }
+  @keyframes anim {
+    0%
+    {
+      background-position: 0;
+    }
+    100%
+    {
+      background-position: 1360px;
+    }
+  }
+  @keyframes anim-rev {
+    0%
+    {
+      background-position: 1360;
+    }
+    100%
+    {
+      background-position: 0px;
+    }
+  }
