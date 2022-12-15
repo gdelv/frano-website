@@ -39,7 +39,7 @@ function App() {
           <nav class="navbar">
             <div class="container">
               <div class="navbar-brand">
-                <a class="navbar-item">
+                <a href="/" class="navbar-item">
                   <img src={logo} alt="Logo" />
                 </a>
                 <span
@@ -54,8 +54,8 @@ function App() {
               </div>
               <div id="navbarMenuHeroA" class={`navbar-menu ${activeStr}`}>
                 <div class="navbar-end">
-                  {/* <a class="navbar-item is-active">Home</a> */}
-                  <a class="navbar-item">
+                  {/* <a href="/" class="navbar-item is-active">Home</a> */}
+                  <a href="/" class="navbar-item">
                   <button class="button is-link has-text-black">Contact Us</button>
 
                   </a>
