@@ -39,7 +39,12 @@ function App() {
           <nav class="navbar">
             <div class="container">
               <div class="navbar-brand">
-                <a href="/" class="navbar-item">
+                <a
+                  href="https://www.phonefixit.com/"
+                  target="_blank"
+                  class="navbar-item"
+                  rel="noreferrer"
+                >
                   <img src={logo} alt="Logo" />
                 </a>
                 <span
@@ -54,10 +59,16 @@ function App() {
               </div>
               <div id="navbarMenuHeroA" class={`navbar-menu ${activeStr}`}>
                 <div class="navbar-end">
-                  {/* <a href="/" class="navbar-item is-active">Home</a> */}
-                  <a href="/" class="navbar-item">
-                  <button class="button is-link has-text-black">Contact Us</button>
-
+                  {/* <a href="https://www.phonefixit.com/" target="_blank" class="navbar-item is-active">Home</a> */}
+                  <a
+                    href="https://www.phonefixit.com/"
+                    target="_blank"
+                    class="navbar-item"
+                    rel="noreferrer"
+                  >
+                    <button class="button is-link has-text-black">
+                      Contact Us
+                    </button>
                   </a>
                   {/* <a class="navbar-item">Documentation</a> */}
                   {/* <span class="navbar-item">
@@ -139,42 +150,73 @@ function App() {
         <div class="wave"></div>
       </div>
       <section className="hero is-info is-medium">
-            <div className="hero-body">
-                <div className="container">
-                    <p className="title is-spaced is-uppercase has-text-white is-1">We do it right!</p>
-                    <p className="subtitle has-text-white is-4">When you decide to work with us, you get so much more than your average <span style={{color: "orange"}}>repair</span> shop.</p> 
-                    <p className="subtitle has-text-white is-4">Everything we do at Phonefixit is geared towards providing our customers with a unique and one of a kind <span style={{color: "orange"}}>repair</span> experience.</p>
-                    <p class="subtitle has-text-white is-4">From Live Phone Support to In Depth Market Knowledge, we provide extra features for our customers to provide the best <span style={{color: "orange"}}>service</span>.</p>
-                    <button class="button is-link has-text-black">Contact Us</button>
-                </div>
-            </div>
-        </section>
-        <footer class="footer is-flex">
-            <div class="columns">
+        <div className="hero-body">
+          <div className="container">
+            <p className="title is-spaced is-uppercase has-text-white is-1">
+              We do it right!
+            </p>
+            <p className="subtitle has-text-white is-4">
+              When you decide to work with us, you get so much more than your
+              average <span style={{ color: "orange" }}>repair</span> shop.
+            </p>
+            <p className="subtitle has-text-white is-4">
+              Everything we do at Phonefixit is geared towards providing our
+              customers with a unique and one of a kind{" "}
+              <span style={{ color: "orange" }}>repair</span> experience.
+            </p>
+            <p class="subtitle has-text-white is-4">
+              From Live Phone Support to In Depth Market Knowledge, we provide
+              extra features for our customers to provide the best{" "}
+              <span style={{ color: "orange" }}>service</span>.
+            </p>
+            <a
+              href="https://www.phonefixit.com/"
+              target="_blank"
+              class="navbar-item"
+              rel="noreferrer"
+            >
+              <button class="button is-link has-text-black">Contact Us</button>
+            </a>{" "}
+          </div>
+        </div>
+      </section>
+      <footer class="footer is-flex">
+        <div class="columns" style={{width:"100%"}}>
+          <div class="column is-one-third">
+            <img src={logo} width="112" height="28" alt="logo" style={{margin: "0 auto",display:"flex"}} />
+            <h6 class="subtitle is-6 is-size-7-mobile has-text-centered">
+              © {new Date().getFullYear()} Phonefixit.com, Inc. All Rights
+              Reserved
+            </h6>
+          </div>
+          <div class="column is-one-third">
+            <h4 class="title is-4 is-size-5-mobile">Address</h4>
 
-                <div class="column is-one-quarter">
-                    <img
-                        src={logo}
-                        width="112"
-                        height="28"
-                        alt="logo"
-                    />
-                    <h6 class="subtitle is-6 is-size-7-mobile">© {new Date().getFullYear()} Phonefixit.com, Inc. All Rights Reserved</h6>
-                </div>
-                <div class="column is-half">
-                    <h4 class="title is-4 is-size-5-mobile">Address</h4>
+            <h6 class="subtitle is-6 is-size-6-mobile is-spaced">
+              94 South Broadway Hicksville NY, 11801 USA
+            </h6>
 
-                    <h6 class="subtitle is-6 is-size-6-mobile is-spaced">94 South Broadway Hicksville NY, 11801 USA</h6>
-
-                    <h6 class="subtitle is-6 is-size-6-mobile is-spaced ">208 Glen St. Glen Cove, NY, 11542 USA</h6>
-                </div>
-                <div class="column is-one-third">
-                    <h4 class="title is-4 is-size-5-mobile ">Contact</h4>
-                    <h6 class="subtitle is-6 is-size-6-mobile is-spaced">Hicksville, NY (516)-513-0800</h6>
-                    <h6 class="subtitle is-6 is-size-6-mobile is-spaced">Glen Cove, NY (516)-801-6320</h6>
-                </div>
-            </div>
-        </footer>
+            <h6 class="subtitle is-6 is-size-6-mobile is-spaced ">
+              208 Glen St. Glen Cove, NY, 11542 USA
+            </h6>
+            <h6 class="subtitle is-6 is-size-6-mobile is-spaced ">
+              328 Main St, Huntington, NY 11743, USA{" "}
+            </h6>
+          </div>
+          <div class="column is-one-third">
+            <h4 class="title is-4 is-size-5-mobile ">Contact</h4>
+            <h6 class="subtitle is-6 is-size-6-mobile is-spaced">
+              Hicksville, NY (516)-513-0800
+            </h6>
+            <h6 class="subtitle is-6 is-size-6-mobile is-spaced">
+              Glen Cove, NY (516)-801-6320
+            </h6>
+            <h6 class="subtitle is-6 is-size-6-mobile is-spaced">
+              Huntington, NY (631)-683-5966
+            </h6>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
